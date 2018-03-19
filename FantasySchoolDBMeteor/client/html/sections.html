@@ -1,0 +1,36 @@
+<template name="sections">
+
+	{{> sectionForm}}
+
+	{{#each sections}}
+
+	<div class="section">
+		<table id="section">
+			<thead>
+				<tr>
+					<th>Section Number</th>
+					<th>Room</th>
+					<th>Professor</th>
+					<th>Course</th>
+					<th colspan="3"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- {{#each professors}} -->
+				<tr>
+					<td>{{sectionNumber}}</td>
+					<td>{{sectionRoom}}</td>
+					<td>{{profName}}</td>
+					<td>{{courseName}}</td>
+					<button class="btn btn-sml btn-danger" id="remove-section">Remove Section</button>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	{{else}}
+
+	<h1>No Sections to display.</h1>
+
+	{{/each}}
+</template>

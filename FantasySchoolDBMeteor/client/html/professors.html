@@ -1,0 +1,33 @@
+<template name="professors">
+
+	{{> profForm}}
+
+	{{#each professors}}
+
+	<div class="professor">
+		<table id="professor">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Department</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- {{#each professors}} -->
+				<tr>
+					<td>{{profName}}</td>
+					<td>{{profDept}}</td>
+					<button class="btn btn-sml btn-danger" id="remove-professor">Remove Professor</button>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	
+
+	{{else}}
+
+	<h1>No Professors to display.</h1>
+
+	{{/each}}
+</template>

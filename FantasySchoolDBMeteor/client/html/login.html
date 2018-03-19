@@ -1,0 +1,25 @@
+<template name="login">
+	{{#if currentUser}}
+	<h3 class="black">You are logged in. return <a href="/home">home</a></h3>
+	{{else}}
+	<div class="jumbotron">
+    	<div class="container">
+      		<h1>Welcome to the Fantasy School Database!</h1>
+      		<p>All fantasy faculty members or creatures must register to use the school system database.</p>
+
+      		<p> If you are having trouble logging in, please use the following link below so our tech support can assist you
+       		as soon as possible. </p>
+        	<a href="http://www.homestarrunner.com/systemisdown.html">Tech Support</a>
+    	</div>
+  	</div>
+	<form class="form-signin">
+		<h2 class="form-signin-heading">Account Login</h2>
+		<label for="email" class="sr-only">Email Address</label>
+		<input for="email" name="email" id="email" class="form-control" placeholder="Email Address">
+		<label for="password" class="sr-only">Password</label>
+		<input for="password" name="password" id="password" class="form-control" placeholder="Password">
+		<button type="submit" id="login-btn" class="btn btn-lg btn-primary btn-block">Log In</button>
+		<p>No Account? <a href="/signup">Create Account</a></p>
+	</form>
+	{{/if}}
+</template>

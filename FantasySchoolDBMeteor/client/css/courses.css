@@ -1,0 +1,21 @@
+
+#course {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    border-spacing: 30px;
+    width: 50%;
+}
+
+#course thead {
+    font-size: 23px;
+}
+
+#course td, #course th {
+    border: 5px solid #dddddd;
+    text-align: left;
+    padding-left:12px;
+}
+
+#course tr:nth-child(even) {
+    background-color: #dddddd;
+}

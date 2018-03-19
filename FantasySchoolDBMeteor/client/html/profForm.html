@@ -1,0 +1,31 @@
+<template name="profForm">
+	{{#if currentUser}}
+
+	<!-- Professor Form -->
+	<div id="profForm-wrap">
+		<center>
+			<form class="professor-post">
+				<h2 class="profForm-heading">Post a Professor</h2>
+				<label for="profName" class="sr-only">Professor Name</label>
+				<input type="text" name="profName" id="profName" class="form-control" placeholder="Professor Name Goes Here" maxlength="40">
+				<label for="profDept" class="sr-only">Professor Department</label>
+				<input type="text" name="profDept" id="profDept" class="form-control" placeholder="Professor Department Goes Here" maxlength="140">
+
+				<button class="btn btn-lg btn-success btn-block" type="submit">Post Professor</button>
+			</form>
+		</center>
+	</div>
+	<!-- End Professor Form -->
+	{{else}}
+
+	<div id="profForm-wrap">
+		<center>
+			<form class="professor-post">
+				<h2 class="form-signin-heading">Log in first to Post a Professor!</h2>
+				<a href="/" class="btn btn-md btn-primary" id="login-redir">Login</a>
+			</form>
+		</center>
+	</div>
+
+	{{/if}}
+</template>

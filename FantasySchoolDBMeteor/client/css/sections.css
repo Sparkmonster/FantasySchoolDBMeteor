@@ -1,0 +1,21 @@
+
+#section {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    border-spacing: 30px;
+    width: 50%;
+}
+
+#section thead {
+    font-size: 23px;
+}
+
+#section td, #section th {
+    border: 5px solid #dddddd;
+    text-align: left;
+    padding-left:12px;
+}
+
+#section tr:nth-child(even) {
+    background-color: #dddddd;
+}
